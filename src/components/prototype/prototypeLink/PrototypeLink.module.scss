@@ -1,0 +1,62 @@
+.prototypeLink {
+    width: 600px;
+}
+
+.prototypeLink__quanti {
+    margin-top: 16px;
+
+    h5 {
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+.prototypeLink_people {
+    margin-top: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+
+    p {
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+.prototypeLink__buttons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.prototypeLink__button {
+    padding: 16px 30px 16px 30px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    background: rgb(235, 235, 235);
+    color: rgb(77, 74, 111);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.btnBlue {
+    background: rgb(0, 85, 255);
+    color: rgb(255, 255, 255);
+}

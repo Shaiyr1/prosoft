@@ -1,0 +1,100 @@
+.ordersHistory {
+    width: 100%;
+
+    h2 {
+        color: rgb(77, 74, 111);
+        font-family: Century Gothic;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+.ordersHistory__tabs {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+}
+
+.ordersHistory__tab {
+    padding: 8px 16px 8px 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+    color: rgb(77, 74, 111);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.5s;  
+}
+.ordersHistory__tab:hover {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 85, 255);
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 85, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    transition: 0.5s;
+}
+.activeTab {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 85, 255);
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 85, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.ordersHistory__content {
+    margin-top: 24px;
+    width: 1500px;
+    padding: 24px 24px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 6px;
+
+    background: rgb(255, 255, 255);
+
+    th {
+        padding-bottom: 24px;
+        color: rgb(77, 74, 111);
+        font-family: Century Gothic;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    td {
+        width: 13%;
+        padding-bottom: 24px;
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+.ordersHistory__content_second {
+    width: 21%;
+}

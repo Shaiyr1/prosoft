@@ -1,0 +1,227 @@
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.signIn {
+    background: #ffffff;
+    padding: 60px;
+    width: 520px;
+    height: 371px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+    h1 {
+        margin-bottom: 35px;
+        color: rgb(77, 74, 111);
+        font-family: Century Gothic;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 5px;
+
+        input {
+            padding: 16px 24px 16px 24px;
+            box-sizing: border-box;
+            border: 1px solid rgb(217, 217, 217);
+            border-radius: 10px;
+            background: rgb(255, 255, 255);
+            color: rgb(126, 126, 126);
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 130%;
+            letter-spacing: 0%;
+            text-align: left;
+            outline: none;
+
+            ::placeholder {
+                color: rgb(126, 126, 126);
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 130%;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+        }
+    }
+
+    label span {
+        color: rgb(77, 74, 111);
+        font-family: Century Gothic;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+.signIn__btn {
+    width: 100%;
+    margin-top: 26px;
+    padding: 16px 60px 16px 60px;
+    border-radius: 10px;
+    background: rgb(22, 87, 184);
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.signIn__btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.enterCode {
+    width: 521px;
+    padding: 60px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    position: relative;
+
+    h2 {
+        margin: 35px 0 26px;
+        color: rgb(77, 74, 111);
+        font-family: Century Gothic;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    label {
+        p {
+            color: rgb(77, 74, 111);
+            font-family: Century Gothic;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            margin: 16px 0px 5px;
+            padding: 16px 24px 16px 24px;
+            box-sizing: border-box;
+            border: 1px solid rgb(217, 217, 217);
+            border-radius: 10px;
+            background: rgb(255, 255, 255);
+            outline: none;
+            color: rgb(126, 126, 126);
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 130%;
+            letter-spacing: 0%;
+            text-align: left;
+
+            ::placeholder {
+                color: rgb(126, 126, 126);
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 130%;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.enterCode_close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.enterCode__exit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    span {
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+}
+
+.enterCode__btn {
+    width: 100%;
+    margin-top: 21px;
+    padding: 16px 60px 16px 60px;
+    border-radius: 10px;
+    background: rgb(22, 87, 184);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.enterCode__text {
+    margin-top: 35px;
+    color: rgb(77, 74, 111);
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.enterCode__btnCode {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: rgb(0, 85, 255);
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.error {
+    color: red;
+}

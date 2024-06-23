@@ -1,0 +1,99 @@
+.newsletterHistory__title {
+    margin-bottom: 24px;
+    color: rgb(77, 74, 111);
+    font-family: Century Gothic;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.newsletterHistory__tabs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.newsletterHistory__tabs_tab {
+    padding: 8px 16px 8px 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    color: rgb(77, 74, 111);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+
+.active {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 85, 255);
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+}
+
+.newsletterHistory__content {
+    margin-top: 24px;
+
+}
+
+.newsletterHistory__table {
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 6px;
+
+    background: rgb(255, 255, 255);
+
+    th {
+        padding-bottom: 24px;
+        color: rgb(77, 74, 111);
+        font-family: Century Gothic;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    td {
+        padding: 15px 0;
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    button {
+        margin: 15px 0 0 -16px;
+        width: 128px;
+        height: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+        cursor: pointer;
+        box-sizing: border-box;
+        border: 1px solid rgb(217, 217, 217);
+        border-radius: 100px;
+        background: rgb(255, 255, 255);
+    }
+}
+

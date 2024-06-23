@@ -1,0 +1,167 @@
+.projects {
+
+    h1 {
+        color: rgb(77, 74, 111);
+        font-family: Century Gothic;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+.projects__blocks {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    gap: 54px;
+}
+
+.projects__country {
+    width: 459px;
+    height: 543px;
+    padding: 4px 12px 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    overflow-x: auto;
+
+    p {
+        padding: 8px 12px 8px 12px;
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    p:hover {
+        border-radius: 6px;
+        transition: 0.5s;
+        background: rgb(242, 246, 255);
+    }
+}
+
+.projects__country::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 1px;
+
+    background: rgba(68, 83, 113, 0.1);
+}
+
+.projects__country::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+
+    background: rgb(126, 126, 126);
+}
+
+.projects__popular {
+    padding: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.projects__popularBlock {
+    padding: 16px;
+    border-radius: 6px;
+
+    background: rgb(255, 255, 255);
+
+
+    h5 {
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+.projects__popular_country {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.projects__popular_countryItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        img {
+            width: 28px;
+            height: 20px;
+        }
+
+        p {
+            color: rgb(77, 74, 111);
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 130%;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+
+    span {
+        color: rgb(126, 126, 126);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+.projects__quantiPeople {
+    padding: 16px 19px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+
+    h5 {
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    p {
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: right;
+    }
+}
+
+.projects__popular_chart {
+    position: absolute;
+    top: -59px;
+    right: -144px;
+}

@@ -1,0 +1,81 @@
+.queryHistory__title {
+    margin-bottom: 24px;
+    color: rgb(77, 74, 111);
+    font-family: Century Gothic;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.queryHistory__table {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    padding: 24px;
+
+    th,
+    td {
+        padding: 15px 0;
+    }
+
+    th {
+        width: 74%;
+        color: rgb(77, 74, 111);
+        font-family: Century Gothic;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    td {
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+}
+
+.queryHistory__table_secondTd {
+    color: rgb(77, 74, 111);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700 !important;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.queryHistory__table_btn {
+    margin: 15px;
+    width: 114px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: rgb(235, 235, 235);
+    border: none;
+    color: rgb(77, 74, 111);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.blue {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 85, 255);
+}

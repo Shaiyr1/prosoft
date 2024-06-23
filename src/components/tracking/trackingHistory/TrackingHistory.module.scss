@@ -1,0 +1,46 @@
+.trackingHistory {
+    width: 100%;
+}
+
+.trackingHistory__title {
+    margin-bottom: 24px;
+    color: rgb(77, 74, 111);
+    font-family: Century Gothic;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.trackingHistory__table {
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+
+    background: rgb(255, 255, 255);
+
+    th {
+        padding-bottom: 13px;
+        color: rgb(77, 74, 111);
+        font-family: Century Gothic;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    td {
+        padding: 15px 0 ;
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
