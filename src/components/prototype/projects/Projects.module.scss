@@ -1,4 +1,5 @@
 .projects {
+    width: 100%;
 
     h1 {
         color: rgb(77, 74, 111);
@@ -19,7 +20,7 @@
 }
 
 .projects__country {
-    width: 459px;
+    width: 35%;
     height: 543px;
     padding: 4px 12px 10px 12px;
     box-sizing: border-box;
@@ -62,6 +63,7 @@
 }
 
 .projects__popular {
+    width: 29%;
     padding: 0 0 20px 20px;
     display: flex;
     flex-direction: column;

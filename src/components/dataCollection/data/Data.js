@@ -34,7 +34,7 @@ function Data() {
     return (
         <section className={style.data}>
             <div className={style.container}>
-                <h1 className={style.data__title}>Сбор данных</h1>
+                <h1 className={style.data__title}>Сбор по сайтам</h1>
                 <div className={style.data__blocks}>
                     <div className={style.data__request}>
                         <p className={style.data__request_title}>Введите запрос</p>

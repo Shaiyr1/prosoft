@@ -103,7 +103,7 @@ function SideBar() {
                         <Link className={`${style.sideBar__ul_link} ${isActive('/collection')}`} to='/collection'>
                             <span>
                                 <img src={menu} alt="menu" />
-                                <p>Сбор данных</p>
+                                <p>Сбор по сайтам</p>
                             </span>
                         </Link>
                     </li>
