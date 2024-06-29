@@ -14,7 +14,7 @@ function App() {
       <SideBar/>
       <div className='app__content'>
         <Routes>
-          <Route path='/' element={<SignIn/>}/>
+          {/* <Route path='/' element={<SignIn/>}/> */}
           <Route path='/collection' element={<DataCollection/>}/>
           <Route path='/tracking' element={<Tracking/>}/>
           <Route path='/newsletter' element={<Newsletter/>}/>

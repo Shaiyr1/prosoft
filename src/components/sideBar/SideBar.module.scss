@@ -141,4 +141,8 @@
         letter-spacing: 0%;
         text-align: left;
     }
+    .sideBar {
+        position: fixed;
+        z-index: 1000;
+    }
 }
