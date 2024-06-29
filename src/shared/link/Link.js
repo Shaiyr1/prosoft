@@ -11,7 +11,7 @@ function Link({ selectedLink }) {
         <div className={style.link}>
             <h2>Ссылка</h2>
             <div className={style.link__block}>
-                <span>{selectedLink}</span>
+                <span>{selectedLink.length > 15 ? `${selectedLink.substr(0, 23)}...` : selectedLink}</span>
                 <img onClick={copyToClipboard} src={link} alt="link" />
             </div>
         </div>
