@@ -3,9 +3,11 @@ import style from './Projects.module.scss';
 import chechen from '../../../assets/chechen.png';
 import british from '../../../assets/kingdom.png';
 import germany from '../../../assets/germany.png';
-import tatarstan from '../../../assets/tatarstan.svg'
-import quanti from '../../../assets/quanti.svg'
-import chart from '../../../assets/karta.svg'
+import tatarstan from '../../../assets/tatarstan.svg';
+import quanti from '../../../assets/quanti.svg';
+import chart from '../../../assets/karta.svg';
+import remove from '../../../assets/remove.svg';
+import add from '../../../assets/add.svg';
 
 function Projects() {
 
@@ -27,11 +29,15 @@ function Projects() {
         <section className={style.projects}>
             <h1>Проекты</h1>
             <div className={style.projects__blocks}>
-                <div className={style.projects__country}>
-                    {countryData.map(item => (
-                        <p>{item.name}</p>
-                    ))}
+                <div className={style.adaptive__count}>
+                    <h1>Проекты</h1>
+                    <div className={style.projects__country}>
+                        {countryData.map(item => (
+                            <p>{item.name}</p>
+                        ))}
+                    </div>
                 </div>
+
                 <div className={style.projects__popular}>
                     <div className={style.projects__popularBlock}>
                         <h5>Популярные языки</h5>
@@ -53,7 +59,17 @@ function Projects() {
                         <img src={quanti} alt="quanti" />
                         <p>Ознакомлено</p>
                     </div>
-                    <img className={style.projects__popular_chart} src={chart} alt="chart" />
+                </div>
+                <div className={style.projects__cart}>
+                    <img className={style.projects__cart_chart} src={chart} alt="chart" />
+                    <div className={style.projects__cart_buttons}>
+                        <button>
+                            <img src={remove} alt="remove" />
+                        </button>
+                        <button>
+                            <img src={add} alt="add" />
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

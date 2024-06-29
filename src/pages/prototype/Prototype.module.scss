@@ -4,3 +4,10 @@
     flex-direction: column;
     gap: 54px;
 }
+
+@media (max-width: 768px) {
+    .prototype {
+        padding: 22px 20px 60px;
+    }
+
+}

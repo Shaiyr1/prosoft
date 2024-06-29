@@ -162,8 +162,100 @@
     }
 }
 
-.projects__popular_chart {
-    position: absolute;
-    top: -59px;
-    right: -144px;
+.projects__cart {
+    width: 500px;
+    height: 551px;
+    position: relative;
+
+    &_chart {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &_buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        background: rgb(255, 255, 255);
+        border-radius: 6px;
+
+        button {
+            padding: 4px;
+            border: none;
+            background: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+    }
+}
+.adaptive__count {
+    h1 {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .projects {
+        h1 {
+            display: none;
+        }
+    }
+
+    .projects__blocks {
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+
+    .projects__cart {
+        width: 100%;
+        height: 435px;
+
+        &_chart {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+
+    .projects__popular {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .projects__popularBlock {
+        width: 50%;
+    }
+
+    .projects__quantiPeople {
+        img {
+            width: 100%;
+        }
+    }
+    .adaptive__count {
+        width: 100%;
+        h1 {
+            display: block;
+            margin-bottom: 16px;
+        }
+    }
+
+    .projects__country {
+        width: 100%;
+        position: relative;
+    }
+
+}
+@media (max-width: 480px) {
+    .projects__popular {
+        flex-direction: column;
+    }
+    .projects__popularBlock {
+        width: 100%;
+    }
 }

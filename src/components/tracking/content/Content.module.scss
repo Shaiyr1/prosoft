@@ -240,3 +240,31 @@ table {
     display: flex;
     justify-content: end;
 }
+
+
+@media (max-width: 768px) { 
+    .content { 
+        gap: 80px; 
+    } 
+    .container { 
+        width: 100%; 
+        flex-direction: column; 
+ 
+    } 
+    .content__tracked_info { 
+        width: 100%; 
+    } 
+    .data__select { 
+        width: 100%; 
+    } 
+    .content__add_input { 
+        width: 100%; 
+    } 
+}
+@media (max-width: 480px) { 
+    .text {
+        position: absolute;
+        right: 65px;
+        top: 0;
+    }
+}

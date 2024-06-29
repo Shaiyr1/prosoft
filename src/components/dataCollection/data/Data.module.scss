@@ -158,3 +158,32 @@
     transform: rotate(180deg);
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .data__title {
+        margin-bottom: 24px;
+    }
+    .data__blocks {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .data__request {
+        width: 100%;
+        label {
+            width: 100%;
+        }
+    }
+    .data__request_input {
+        width: 100%;
+    }
+    .data__request_btn {
+        display: none;
+    }
+
+    .data__select {
+        width: 100%;
+    }
+}

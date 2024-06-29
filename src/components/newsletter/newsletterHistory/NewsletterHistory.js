@@ -62,6 +62,30 @@ function NewsletterHistory() {
                     </tbody>
                 </table>
             </div>
+            <div className={style.adaptive__tables}>
+                {newsletters[activeTab].map((newsletter, index) => (
+                    <table className={style.newsletterHistory__table} key={index}>
+                        <thead>
+                            <tr>
+                                {['Название', 'Текст письма', 'Соцсеть', 'Дата', 'Время', 'Статус'].map((header, index) => (
+                                    <th key={index}>{header}</th>
+                                ))}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{newsletter.title}</td>
+                                <td>{newsletter.text}</td>
+                                <td>{newsletter.social}</td>
+                                <td>{newsletter.date}</td>
+                                <td>{newsletter.time}</td>
+                                <td><button>{newsletter.status}</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                ))}
+
+            </div>
         </section>
     );
 }

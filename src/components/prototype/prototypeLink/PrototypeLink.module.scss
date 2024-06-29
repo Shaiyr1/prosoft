@@ -60,3 +60,19 @@
     background: rgb(0, 85, 255);
     color: rgb(255, 255, 255);
 }
+
+@media (max-width: 768px) {
+    .prototypeLink {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .prototypeLink__buttons {
+        flex-direction: column;
+
+        button {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

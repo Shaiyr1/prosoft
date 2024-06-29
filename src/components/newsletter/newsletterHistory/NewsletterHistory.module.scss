@@ -97,3 +97,44 @@
     }
 }
 
+.adaptive__tables {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .newsletterHistory__tabs {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .newsletterHistory__content {
+        display: none;
+    }
+    .adaptive__tables {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .newsletterHistory__table {
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+
+        tr {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            th {
+                padding: 0;
+            }
+            td {
+                padding: 0;
+                text-align: right;
+            }
+        }
+        button {
+            margin: 0;
+        }
+    }
+
+}

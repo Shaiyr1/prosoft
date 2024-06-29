@@ -70,38 +70,27 @@ function Make() {
                     </div>
                     <button className={style.make__social_btn}>Загрузить аккаунты</button>
                 </div>
-                {/* <div className={style.make__message}>
+                <div className={style.make__message}>
                     <label>
                         <input className={style.make__message_input} type="text" placeholder='Сообщение' />
                         <div>
                             <button className={style.make__message_btn} type='submit'>Отправить</button>
-                            <span><img src={clock} alt="clock" /><p>Дата и время отправки</p></span>
-                            <input className={style.make__message_data} type="date" placeholder='Дата и время отправки' />
+                            {showDateInput ? (
+                                <input
+                                    className={style.make__message_data}
+                                    type="date"
+                                    value={selectedDate}
+                                    onChange={handleDateChange}
+                                />
+                            ) : (
+                                <span className={style.datePlaceholder} onClick={handleDateClick}>
+                                    <img src={clock} alt="clock" />
+                                    <p>Дата и время отправки</p>
+                                </span>
+                            )}
                         </div>
-
                     </label>
-                </div> */}
-                <div className={style.make__message}>
-            <label>
-                <input className={style.make__message_input} type="text" placeholder='Сообщение' />
-                <div>
-                    <button className={style.make__message_btn} type='submit'>Отправить</button>
-                    {showDateInput ? (
-                        <input 
-                            className={style.make__message_data} 
-                            type="date" 
-                            value={selectedDate} 
-                            onChange={handleDateChange} 
-                        />
-                    ) : (
-                        <span className={style.datePlaceholder} onClick={handleDateClick}>
-                            <img src={clock} alt="clock" />
-                            <p>Дата и время отправки</p>
-                        </span>
-                    )}
                 </div>
-            </label>
-        </div>
             </div>
         </section>
     );

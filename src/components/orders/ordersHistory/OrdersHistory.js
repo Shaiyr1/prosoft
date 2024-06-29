@@ -62,6 +62,35 @@ function OrdersHistory() {
                     ))}
                 </tbody>
             </table>
+            <div className={style.adaptive__block}>
+                {filteredOrders.map((order, index) => (
+                    <table className={style.ordersHistory__contentAdaptive} key={index}>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th className={style.ordersHistory__content_second}>Услуга</th>
+                                <th>Дата</th>
+                                <th>Начальное кол-во</th>
+                                <th>Кол-во</th>
+                                <th>Осталось</th>
+                                <th>Статус</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr key={order.id}>
+                                <td>{order.id}</td>
+                                <td>{order.service}</td>
+                                <td>{order.date}</td>
+                                <td>{order.startQty}</td>
+                                <td>{order.qty}</td>
+                                <td>{order.remaining}</td>
+                                <td>{order.status}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                ))}
+
+            </div>
         </section>
     );
 }

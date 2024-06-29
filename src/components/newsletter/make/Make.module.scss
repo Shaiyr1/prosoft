@@ -202,3 +202,20 @@
 
 
 
+@media (max-width: 768px) {
+    .make {
+        width: 100%;
+    }
+    .make__blocks {
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .make__select {
+        width: 100%;
+    }
+    .make__message_input {
+        width: 100%;
+    }
+}

@@ -10,5 +10,12 @@
     width: 100%;
     background: rgb(249, 248, 248);
 }
+
+@media (max-width: 768px) {
+    .app {
+        display: flex;
+        flex-direction: column
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('./fonts/stylesheet.css');

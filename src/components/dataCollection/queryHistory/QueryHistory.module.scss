@@ -79,3 +79,85 @@
     color: rgb(255, 255, 255);
     background: rgb(0, 85, 255);
 }
+
+.adaptive__tables {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .queryHistory__table {
+        display: none;
+    }
+
+    .adaptive__tables {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .queryHistory__tableAdaptive {
+        height: 151px;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 1px solid rgb(217, 217, 217);
+        border-radius: 6px;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+
+        tr {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            td {
+                text-align: right;
+            }
+        }
+
+        &_first {
+            display: none;
+        }
+
+        &_second {
+            margin-top: 33px;
+            color: rgb(77, 74, 111);
+            font-family: Century Gothic;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        &_tdTitle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: rgb(77, 74, 111);
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 130%;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+
+    .queryHistory__tableAdaptive_first {
+        display: none;
+    }
+
+    .queryHistory__table_btn {
+        margin: 20px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+    }
+
+    .queryHistory__table_secondTd {
+        margin-top: 37px;
+    }
+}

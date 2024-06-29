@@ -4,3 +4,12 @@
     flex-direction: column;
     gap: 318px;
 }
+
+@media (max-width: 768px) {
+    .dataCollection {
+        padding: 60px 20px 80px;
+        gap: 80px;
+
+    }
+
+}

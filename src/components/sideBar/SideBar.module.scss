@@ -57,6 +57,7 @@
 
 
         }
+
         :hover {
             color: rgb(124, 124, 124);
 
@@ -66,4 +67,78 @@
 
 .sideBar__ul_logOut {
     margin-top: 154px;
+}
+
+.sideBar__burgerIcon {
+    display: none;
+}
+
+.sideBar__closeBurger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sideBar {
+        width: 100%;
+        padding: 12px 20px 12px 20px;
+        position: relative;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sideBar__ul {
+        display: none;
+        padding-bottom: 8px;
+
+        &.open {
+            display: block; // show the menu when burger menu is open
+        }
+    }
+
+    .sideBar__user {
+        margin-left: 46px;
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
+
+    .sideBar__ul_logOut {
+        display: none;
+    }
+
+    .sideBar__burgerIcon {
+        cursor: pointer;
+        display: block;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 12px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sideBar__user h4 {
+        color: rgb(255, 255, 255);
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    .sideBar__user p {
+        color: rgb(196, 196, 196);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
 }

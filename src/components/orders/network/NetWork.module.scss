@@ -262,3 +262,30 @@
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    .network__blocks {
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .network__social {
+        width: 100%;
+    }
+
+    .network__right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .network__check {
+        flex-direction: column;
+
+        button {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

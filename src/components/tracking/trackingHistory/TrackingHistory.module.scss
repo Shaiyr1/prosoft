@@ -34,7 +34,7 @@
     }
 
     td {
-        padding: 15px 0 ;
+        padding: 15px 0;
         color: rgb(77, 74, 111);
         font-family: Inter;
         font-size: 18px;
@@ -42,5 +42,105 @@
         line-height: 22px;
         letter-spacing: 0%;
         text-align: left;
+    }
+}
+
+.adaptive__tables {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .adaptive__tables {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .trackingHistory__table {
+        display: none;
+    }
+
+    .TrackingHistory__adaptiveTable {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        box-sizing: border-box;
+        border: 1px solid rgb(217, 217, 217);
+        border-radius: 6px;
+
+        background: rgb(255, 255, 255);
+
+        thead tr {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 13px;
+        }
+
+        tbody tr {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 13px;
+
+        }
+
+        .tdLink {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 86px;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+        }
+
+        th {
+            color: rgb(77, 74, 111);
+            font-family: Century Gothic;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        td {
+            color: rgb(77, 74, 111);
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 130%;
+            letter-spacing: 0%;
+            text-align: right;
+        }
+    }
+
+    .fore {
+        margin-top: 30px;
+    }
+
+    .adaptive__link {
+        color: rgb(77, 74, 111);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: right;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .TrackingHistory__adaptiveTable {
+        .tdLink {
+            position: static;
+        }
+    }
+
+    .fore {
+        margin-top: 0;
     }
 }
