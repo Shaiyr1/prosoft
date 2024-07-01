@@ -192,11 +192,11 @@
 
     }
 }
+
 .adaptive__count {
-    h1 {
-        display: none;
-    }
+    display: none;
 }
+
 @media (max-width: 768px) {
     .projects {
         h1 {
@@ -237,10 +237,14 @@
             width: 100%;
         }
     }
+
     .adaptive__count {
         width: 100%;
+        display: block;
+
         h1 {
             display: block;
+
             margin-bottom: 16px;
         }
     }
@@ -250,11 +254,17 @@
         position: relative;
     }
 
+    .secondCountry {
+        display: none;
+    }
+
 }
+
 @media (max-width: 480px) {
     .projects__popular {
         flex-direction: column;
     }
+
     .projects__popularBlock {
         width: 100%;
     }

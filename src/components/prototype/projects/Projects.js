@@ -37,7 +37,11 @@ function Projects() {
                         ))}
                     </div>
                 </div>
-
+                <div className={`${style.projects__country} ${style.secondCountry}`}>
+                        {countryData.map(item => (
+                            <p>{item.name}</p>
+                        ))}
+                    </div>
                 <div className={style.projects__popular}>
                     <div className={style.projects__popularBlock}>
                         <h5>Популярные языки</h5>
